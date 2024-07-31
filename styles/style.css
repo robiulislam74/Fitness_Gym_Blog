@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* font-family: 'Miama', sans-serif; */
+
+.inter-regular-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+  /* Universal styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+/* Shared Styles */
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.webpage_bg_color{
+    background-color: hsla(0, 0%, 1%, 0.895);
+    /* background-color: #000000; */
+}
+
+.btn{
+    border: none;
+    padding: 16px 45px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.12rem;
+    border-radius: 40px;
+}
+.btn2{
+    background-color: #0f0f0f;
+    border: 1px solid #FFFFFF;
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+ .description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+/* Description text primary color */
+.primary_color{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Navbar part start */
+.linear-gradient{
+    backdrop-filter: blur(4px);
+    background: linear-gradient(to right, rgba(71,71,71,1) 0%, rgba(102,102,102,1) 0%, rgba(28,28,28,1) 0%, rgba(43,43,43,1) 57%, rgba(44,44,44,1) 100%);
+}
+.navbar_part{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 55px 0px 0px 0px;
+}
+
+.navbar_part .nav_logo{
+    font-size: 2.25rem;
+    color: #E6533C;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.navbar_part .nav_items{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFF;
+    border: .5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    gap: 40px;
+}
+
+.navbar_part .item{
+    padding: 12px 25px;
+    font-size: 1.12rem;
+    border-radius: 30px;
+}
+
+.navbar_part .item:first-child{
+    background-color: #E6533C;
+}
+
+.navbar_part .item:hover{
+    background-color: #E6533C;
+}
+.bar{
+    display: none;
+}
+/* .navbar_part i{
+    display: none;
+} */
+/* Banner part start */
+/* .banner_part{
+    background-image: url(../images/banner_img.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    align-items: center;
+    height: 95vh;
+} */
+
+.banner_part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_part .banner_img img{
+    margin-right: 67px;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 100%;
+ }
+
+.banner_part .banner_content{
+    max-width: 40%;
+    padding-top: 130px;
+}
+.banner_part .banner_content .banner_title{
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 800;  
+    margin-bottom: 24px;
+}
+.banner_part .banner_title .shape{
+    font-family: 'Miama', sans-serif;
+    color: #FFFFFF;
+    font-size: 8rem;
+    font-weight: 400;
+    position: relative;
+    line-height: 50%;
+}
+
+.banner_part .banner_description{
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.banner_part .banner_img {
+    position: relative;
+}
+
+.small_box{
+    /* max-width: 205px;
+    max-height: 95px; */
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 17px 11px;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 11%;
+    left: -14%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+.small_box i{
+    color: #FFFF;
+    padding: 7px 9px;
+    background-color: #E6533C;
+    border-radius: 50%;
+} 
+
+.small_box h3{
+    color: #FFFFFF;
+    font-size: 1.50rem;
+}
+.small_box p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+}
+
+.small_box2{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    left: 56%;
+    bottom: 63%;
+}
+/* Habit Part start */
+.habits_part{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.habits_part .content{
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.habits_part .habits_card_box .card{
+    width: 230px;
+    text-align: center;
+}   
+.habits_part .habits_card_box .card img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+}   
+.habits_part .habits_card_box .card h4{
+    font-size: 1.12rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 6px;
+}   
+.habits_part .habits_card_box .card p{
+    line-height: 18px;
+}   
+.habits_part .habits_card_box{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}   
+/* Run_part start here */
+.run_part{
+    background-color:rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 54px;
+    border-radius: 18px;
+    margin-bottom: 100px;
+}
+.run_part .run_content{
+    max-width: 33%;
+}
+
+.run_part .run_content .run_btn{
+        padding: 16px 65px;
+        margin-top: 34px;
+}
+
+.run_part .run_img{
+    max-width: 366px;
+    max-height: 312px;
+    border-radius: 18px;
+}
+.run_part .run_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+/* BMI part start here */
+.bmi_part .bmi_chart{
+    max-width: 45%;
+}
+.bmi_part .bmi_calculate{
+    max-width: 55%;
+}
+.bmi_container_box{
+    display: flex;
+    justify-content: space-between;
+}
+.bmi_calculator_box{
+    background-color:rgb(34, 34, 34);
+    padding: 50px 0px;
+}
+.bmi_part .bmi_content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 88px;
+}
+
+.bmi_part .chart_title{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+}
+.bmi_part table{
+    margin-top: 50px;
+}
+
+.bmi_part table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 15px 45px 15px 17px;
+    text-align: left;
+  }
+
+  .bmi_part th{
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  .bmi_part td{
+    font-size: .87rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .bmi_part .bmi_calculate .description{
+    margin: 14px 0px 34px 0px;
+  }
+
+  .bmi_part .bmi_calculate input, select {
+    width: 47%;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 22px;
+  }
+
+  .bmi_part input::placeholder, select{
+    color: #AFAFAF;
+    font-size: 1rem;
+  }
+
+  .bmi_calculate .activiti_slect{
+    width: 96%;
+  }
+ .bmi_calculate .from_btn{
+    display: inline-block;
+    margin-top: 20px;
+ }
+
+ /* Our Team Part Start */
+ .team_part {
+    margin-top: 88px;
+ }
+
+ .team_part .team_content{
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ .team_part .img_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding: 20px 20px 0px 20px;
+    border-radius: 18px;
+    margin: 58px 0px 88px 0px;
+ }
+
+ .team_part .img_box .team_img{
+    margin-bottom: 20px;
+    position: relative;
+ }
+
+ .team_part .img_box .team_img1{
+    width: 32%;
+    height: 272px;
+    background-image: url(../images/trainer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+ .team_part .img_box .team_img2{
+    width: 32%;
+    height: 272px;
+    background-image: url(../images/trainer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+ .team_part .img_box .team_img3{
+    width: 32%;
+    height: 272px;
+
+    background-image: url(../images/trainer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+ .team_part .img_box .team_img4{
+    width: 32%;
+    height: 272px;
+    background-image: url(../images/trainer4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+ .team_part .img_box .team_img5{
+    width: 32%;
+    height: 272px;
+    background-image: url(../images/trainer5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+ .team_part .img_box .team_img6{
+    width: 32%;
+    height: 272px;
+    background-image: url(../images/trainer6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 18px;
+ }
+
+ .team_part .img_box h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+ }
+ .team_part .img_box p{
+    font-size: .88rem;
+    color: rgba(255, 255, 255, 0.5);
+ }
+
+ .team_part .img_box .team_img .img_title{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner and Habits part responsive here */
+@media screen and (max-width: 576px) {
+    .navbar_part .nav_items{
+        display: none;
+    }
+    .bar{
+        display: block;
+        margin-left: 85%;
+        font-size: 1.15rem;
+    }
+    .banner_part{
+        flex-direction: column;
+    }
+   
+    .navbar_part .nav_logo{
+        font-size: 2rem;
+    }
+    .banner_part .banner_content{
+        max-width: 90%;
+        padding-top: 60px;
+    }
+    .banner_part .banner_content .banner_title{
+        font-size: 2.25rem;
+    }
+    .banner_part .banner_title .shape{
+        font-size: 5.2rem;
+    }
+
+    .btn {
+        padding: 16px 13px;
+        font-size: .9rem;
+    }
+    .bmi_calculate .from_btn{
+        padding: 16px 70px;
+     }
+    .btn_box{
+        justify-items: center;
+    }
+
+    /* .banner_part .banner_img{
+        justify-items: center;
+        padding: 10px;
+    } */
+    .habits_part .habits_card_box{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+     } 
+    .habits_part .habits_card_box .card{
+        margin-bottom: 40px;
+     } 
+     .title{
+        font-size: 2rem;
+     }
+     .small_box {
+        padding: 18px 16px;
+        left: -3%;
+     }
+     .small_box2 {
+        bottom: 64%;
+        left: 55%;
+     }
+     .small_box h3{
+        font-size: 1.25rem;
+    }
+    .small_box p{
+        font-size: .8rem;
+    }
+    .run_part{
+        flex-direction: column;
+        align-items: right;
+        padding: 40px 18px;
+    }
+
+    .run_part .run_content {
+        max-width: 100%;
+    }
+
+    .run_part .run_content .run_btn{
+        margin-bottom: 30px;
+    }
+    .bmi_container_box{
+        flex-direction: column;
+    }
+    .bmi_part .bmi_chart{
+        max-width: 100%;
+    }
+    .bmi_part .bmi_calculate {
+        max-width: 100%;
+    }
+    .bmi_part table, th, td {
+        padding: 15px 28px 15px 17px;
+    }
+    .bmi_part .chart_title {
+        font-size: 1.25rem;
+    }
+    .bmi_chart{
+        margin-bottom: 42px;
+    }
+    .bmi_content{
+        padding-left: 25px;
+    }
+
+    .team_part .img_box{
+        flex-direction: column;
+     }
+     .team_part .img_box .team_img {
+        width: 100%;
+    }
+     .team_part .team_content{
+        max-width: 100%;
+     }
+     .team_part .img_box h5{
+        font-size: 1.25rem;
+     }
+     .team_part .img_box p{
+        font-size: .88rem;
+     }
+     .team_part .img_box .team_img1, .team_img4{
+        display: none;
+     }
+
+}
+
+
+
+
+
+/* Training and Exersices part here */
+/* .training_part .training_content{
+    max-width: 50%;
+}
+.training_img_box .row_01{
+    display: flex;
+}
+
+.training_img_box .row_01 .img1{
+    width: 25%;
+    height: 14%;
+}
+.training_img_box .row_01 .img2{
+    width: 50%;
+    height: 14%;
+}
+.training_img_box .row_01 .img3{
+    width: 25%;
+    height: 14%;
+}
+
+.training_img_box .row_01 .img1 img{
+    width: 100%;
+    height: 100%;
+}
+.training_img_box .row_01 .img2 img{
+    width: 100%;
+    height: 100%;
+}
+.training_img_box .row_01 .img3 img{
+    width: 100%;
+    height: 100%;
+} */
+
