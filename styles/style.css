@@ -897,7 +897,7 @@ footer{
 
     .tutorial_part .video_content{
         width: 100%;
-        margin-left: 54px;
+        /* margin-left: 54px; */
     }
     .tutorial_part .writing_content{
         width: 100%;
@@ -915,13 +915,13 @@ footer{
         width: 44%;
         height: 62%;
         bottom: -60px;
-        left: -38px
+        left: -18px
     }
     .tutorial_part .video_3 {
         width: 44%;
         height: 62%;
         bottom: -60px;
-        right: 23px;
+        right: -18px;
     }
 
     .team_part .img_box{
