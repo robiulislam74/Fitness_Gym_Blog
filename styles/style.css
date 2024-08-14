@@ -518,7 +518,7 @@ ul, li, a{
   }
 
   .bmi_part .bmi_calculate input, select {
-    width: 47%;
+    width: 46%;
     padding: 16px 20px;
     margin-bottom: 12px;
     margin-right: 6px;
@@ -830,7 +830,7 @@ footer{
     }
 
      .title{
-        font-size: 1.90rem;
+        font-size: 1.75rem;
      }
      .small_box {
         padding: 14px 4px;
@@ -863,7 +863,7 @@ footer{
 
     .run_part .run_content .run_btn{
         margin-bottom: 30px;
-        padding: 16px 100px;
+        padding: 16px 88px;
     }
     .bmi_container_box{
         flex-direction: column;
@@ -1026,6 +1026,7 @@ footer{
     }
 
 }
+
 
 
 @media screen and (min-width: 992px) {
