@@ -173,8 +173,8 @@ ul, li, a{
     text-align: center;
     border-radius: 12px;
     position: absolute;
-    bottom: 11%;
-    left: -14%;
+    bottom: 14%;
+    left: -10%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -213,6 +213,8 @@ ul, li, a{
 .habits_part .content{
     margin-bottom: 55px;
     text-align: center;
+    width: 54%;
+    margin: 0px auto 55px;
 }
 
 .habits_part .habits_card_box .card{
@@ -235,6 +237,7 @@ ul, li, a{
 .habits_part .habits_card_box{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
 }   
 /* Run_part start here */
 .run_part{
@@ -767,7 +770,7 @@ footer{
 
 
 /* Banner and Habits part responsive here */
-@media screen and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
     .navbar_part .nav_items{
         display: none;
     }
@@ -795,8 +798,8 @@ footer{
     }
 
     .btn {
-        padding: 16px 13px;
-        font-size: .9rem;
+        padding: 14px 11px;
+        font-size: .8rem;
     }
     .bmi_calculate .from_btn{
         padding: 16px 70px;
@@ -815,6 +818,10 @@ footer{
     .habits_part .habits_card_box .card{
         margin-bottom: 40px;
      } 
+
+     .habits_part .content {
+        width: 100%;
+    }
 
      .banner_part .banner_img img {
         margin-right: 27px;
@@ -1019,40 +1026,62 @@ footer{
 }
 
 
+@media screen and (min-width: 992px) {
+    .banner_part .banner_content {
+        max-width: 46%;
+    }
+    /* .btn {
+        padding: 16px 28px;
+    } */
+    .banner_btn{
+        padding: 16px 28px;
+    }
+
+    .banner_img {
+        margin-left: 90px;
+    }
+    /* .habits_part .habits_card_box {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        row-gap: 50px;
+    } */
+    .run_part .run_content {
+        max-width: 50%;
+    }
+    .training_part .training_content {
+        width: 76%;
+    }
+
+    .tutorial_part .writing_content {
+        width: 40%;
+    }
+    .tutorial_part .video_content {
+        width: 60%;
+    }
+    .tutorial_part .video_1 {
+        width: 73%;
+        height: 90%;
+    }
+
+    .tutorial_part .video_2 {
+        width: 40%;
+        height: 45%;
+        bottom: -55px;
+        left: -55px;
+    }
+
+    .tutorial_part .video_3 {
+        width: 40%;
+        height: 45%;
+        position: absolute;
+        right: 50px;
+        bottom: -55px;
+    }
+    .team_part .team_content {
+        max-width: 76%;
+    }
+
+}
 
 
-
-/* Training and Exersices part here */
-/* .training_part .training_content{
-    max-width: 50%;
-}
-.training_img_box .row_01{
-    display: flex;
-}
-
-.training_img_box .row_01 .img1{
-    width: 25%;
-    height: 14%;
-}
-.training_img_box .row_01 .img2{
-    width: 50%;
-    height: 14%;
-}
-.training_img_box .row_01 .img3{
-    width: 25%;
-    height: 14%;
-}
-
-.training_img_box .row_01 .img1 img{
-    width: 100%;
-    height: 100%;
-}
-.training_img_box .row_01 .img2 img{
-    width: 100%;
-    height: 100%;
-}
-.training_img_box .row_01 .img3 img{
-    width: 100%;
-    height: 100%;
-} */
 
