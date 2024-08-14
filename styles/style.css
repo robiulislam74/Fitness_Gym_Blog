@@ -263,10 +263,10 @@ ul, li, a{
     width: 40%;
     height: 312px;
     border-radius: 18px;
-    background-image: url(../images/run.jpg);
+    /* background-image: url(../images/run.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: right; */
 }
 
 .run_part .run_img .fit_img{
@@ -534,7 +534,7 @@ ul, li, a{
   }
 
   .bmi_calculate .activiti_slect{
-    width: 94%;
+    width: 92%;
   }
  .bmi_calculate .from_btn{
     display: inline-block;
@@ -865,6 +865,11 @@ footer{
         margin-bottom: 30px;
         padding: 16px 88px;
     }
+    .run_part .run_img .fit_img {
+        object-position: 66% 30%;
+    }
+
+
     .bmi_container_box{
         flex-direction: column;
     }
@@ -1029,7 +1034,7 @@ footer{
 
 
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1999.98px) {
     .banner_part .banner_content {
         max-width: 46%;
     }
